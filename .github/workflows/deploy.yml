@@ -1,9 +1,10 @@
-yaml
 name: Deploy Shinylive App
+
 on:
   push:
     branches: [main, master]
 
+# Allows one concurrent deployment to prevent race conditions
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
